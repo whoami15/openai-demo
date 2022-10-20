@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccbd816a07b206f971042295b899d1ba",
+    "content-hash": "96af205b1a87fee7fef2b299e79150f0",
     "packages": [
         {
             "name": "brick/math",
@@ -2103,6 +2103,86 @@
                 }
             ],
             "time": "2022-10-17T15:20:29+00:00"
+        },
+        {
+            "name": "openai-php/client",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/openai-php/client.git",
+                "reference": "36f4730048bb098e8659971a69c64428e01f1e06"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/openai-php/client/zipball/36f4730048bb098e8659971a69c64428e01f1e06",
+                "reference": "36f4730048bb098e8659971a69c64428e01f1e06",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.5.0",
+                "php": "^8.1.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.2.0",
+                "nunomaduro/collision": "^7.0.0",
+                "pestphp/pest": "^2.0.0",
+                "pestphp/pest-plugin-mock": "^2.0.0",
+                "phpstan/phpstan": "^1.8.7",
+                "rector/rector": "^0.14.5",
+                "symfony/var-dumper": "^6.2.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/OpenAI.php"
+                ],
+                "psr-4": {
+                    "OpenAI\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nuno Maduro",
+                    "email": "enunomaduro@gmail.com"
+                }
+            ],
+            "description": "OpenAI PHP is a supercharged PHP API client that allows you to interact with the Open AI API",
+            "keywords": [
+                "GPT-3",
+                "api",
+                "client",
+                "codex",
+                "language",
+                "natural",
+                "openai",
+                "php",
+                "processing",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/openai-php/client/issues",
+                "source": "https://github.com/openai-php/client/tree/main"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/paypalme/enunomaduro",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/nunomaduro",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/nunomaduro",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-10-04T23:34:49+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -7816,7 +7896,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "openai-php/client": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
