@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "96af205b1a87fee7fef2b299e79150f0",
+    "content-hash": "6f98022225efde8b7571fbd60b3de72f",
     "packages": [
         {
             "name": "brick/math",
@@ -899,16 +899,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v9.45.0",
+            "version": "v9.45.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "f2c51fdfcb0c50c19cdc49c2e82690ad1a21eafe"
+                "reference": "faeb20d3fc61b69790068161ab42bcf2d5faccbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/f2c51fdfcb0c50c19cdc49c2e82690ad1a21eafe",
-                "reference": "f2c51fdfcb0c50c19cdc49c2e82690ad1a21eafe",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/faeb20d3fc61b69790068161ab42bcf2d5faccbc",
+                "reference": "faeb20d3fc61b69790068161ab42bcf2d5faccbc",
                 "shasum": ""
             },
             "require": {
@@ -1081,7 +1081,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-12-20T14:16:06+00:00"
+            "time": "2022-12-21T19:37:46+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -2106,16 +2106,16 @@
         },
         {
             "name": "openai-php/client",
-            "version": "dev-main",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/openai-php/client.git",
-                "reference": "f2789b0ff663a0bcf7a789b54d4bbb7f007e87b7"
+                "reference": "606d578256a5a47d62b6cd0e3806cdeceb158d59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/openai-php/client/zipball/f2789b0ff663a0bcf7a789b54d4bbb7f007e87b7",
-                "reference": "f2789b0ff663a0bcf7a789b54d4bbb7f007e87b7",
+                "url": "https://api.github.com/repos/openai-php/client/zipball/606d578256a5a47d62b6cd0e3806cdeceb158d59",
+                "reference": "606d578256a5a47d62b6cd0e3806cdeceb158d59",
                 "shasum": ""
             },
             "require": {
@@ -2127,11 +2127,10 @@
                 "nunomaduro/collision": "^7.0.0",
                 "pestphp/pest": "^2.0.0",
                 "pestphp/pest-plugin-mock": "^2.0.0",
-                "phpstan/phpstan": "^1.9.2",
-                "rector/rector": "^0.14.8",
+                "phpstan/phpstan": "^1.9.1",
+                "rector/rector": "^0.14.7",
                 "symfony/var-dumper": "^6.2.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -2167,7 +2166,7 @@
             ],
             "support": {
                 "issues": "https://github.com/openai-php/client/issues",
-                "source": "https://github.com/openai-php/client/tree/main"
+                "source": "https://github.com/openai-php/client/tree/v0.2.1"
             },
             "funding": [
                 {
@@ -2183,7 +2182,91 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-11-26T21:40:20+00:00"
+            "time": "2022-11-09T20:10:40+00:00"
+        },
+        {
+            "name": "openai-php/laravel",
+            "version": "v0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/openai-php/laravel.git",
+                "reference": "823d4b0174ba6d66a10842182176657c2ee7d320"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/openai-php/laravel/zipball/823d4b0174ba6d66a10842182176657c2ee7d320",
+                "reference": "823d4b0174ba6d66a10842182176657c2ee7d320",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^9.45.1",
+                "openai-php/client": "^0.2.1",
+                "php": "^8.1.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.3",
+                "pestphp/pest": "^2.0.0",
+                "pestphp/pest-plugin-mock": "^2.0.0",
+                "phpstan/phpstan": "^1.9.4",
+                "symfony/var-dumper": "^6.2.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "OpenAI\\Laravel\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "OpenAI\\Laravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nuno Maduro",
+                    "email": "enunomaduro@gmail.com"
+                }
+            ],
+            "description": "OpenAI PHP for Laravel is a supercharged PHP API client that allows you to interact with the Open AI API",
+            "keywords": [
+                "GPT-3",
+                "api",
+                "client",
+                "codex",
+                "dall-e",
+                "language",
+                "laravel",
+                "natural",
+                "openai",
+                "php",
+                "processing",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/openai-php/laravel/issues",
+                "source": "https://github.com/openai-php/laravel/tree/v0.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/paypalme/enunomaduro",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/nunomaduro",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/nunomaduro",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-12-26T22:38:17+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -7909,9 +7992,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "openai-php/client": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
